@@ -1,0 +1,199 @@
+{
+  "dataset_info": {
+    "total_samples": 10000,
+    "text_column": "Headline",
+    "label_column": "Category",
+    "categories": {
+      "Sports": 4381,
+      "Entertainment": 2464,
+      "Business & Economics": 2425,
+      "Science & Technology": 730
+    }
+  },
+  "evaluation_results": {
+    "precision": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 0.6525357142857142,
+        "std": 0.1782590238632741
+      },
+      "TF-IDF": {
+        "mean": 0.30633333333333335,
+        "std": 0.24476269686734903
+      },
+      "KeyBERT": {
+        "mean": 0.122,
+        "std": 0.13295111883696203
+      },
+      "Transformer": {
+        "mean": 0.9546611111111112,
+        "std": 0.06676728693047544
+      }
+    },
+    "recall": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 0.678530303030303,
+        "std": 0.16619655546209422
+      },
+      "TF-IDF": {
+        "mean": 0.23368968253968253,
+        "std": 0.20234405725556256
+      },
+      "KeyBERT": {
+        "mean": 0.09829422799422798,
+        "std": 0.12006619725827904
+      },
+      "Transformer": {
+        "mean": 0.9816686868686869,
+        "std": 0.04805094242628629
+      }
+    },
+    "f1": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 0.6543769798828623,
+        "std": 0.1502293216129175
+      },
+      "TF-IDF": {
+        "mean": 0.25667767787767787,
+        "std": 0.20570686339886224
+      },
+      "KeyBERT": {
+        "mean": 0.10520990675990675,
+        "std": 0.11772990084115477
+      },
+      "Transformer": {
+        "mean": 0.9668143641016707,
+        "std": 0.04961452082633171
+      }
+    },
+    "relevance": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 0.3045895014987327,
+        "std": 0.11291125760249042
+      },
+      "TF-IDF": {
+        "mean": 0.35850576577335597,
+        "std": 0.12021062871047283
+      },
+      "KeyBERT": {
+        "mean": 0.567479938685894,
+        "std": 0.10200184261892532
+      },
+      "Transformer": {
+        "mean": 0.3214546683738008,
+        "std": 0.1060715286452242
+      }
+    },
+    "diversity": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 0.3825408756732941,
+        "std": 0.08858739415631055
+      },
+      "TF-IDF": {
+        "mean": 0.43396622157096865,
+        "std": 0.11726883912508139
+      },
+      "KeyBERT": {
+        "mean": 0.4952366787195206,
+        "std": 0.12263630313725787
+      },
+      "Transformer": {
+        "mean": 0.45141222393512725,
+        "std": 0.09332731940975304
+      }
+    },
+    "keyword_counts": {
+      "RAKE": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "YAKE": {
+        "mean": 8.51,
+        "std": 1.8005277004256282
+      },
+      "TF-IDF": {
+        "mean": 4.946,
+        "std": 0.3782644577540957
+      },
+      "KeyBERT": {
+        "mean": 5.0,
+        "std": 0.0
+      },
+      "Transformer": {
+        "mean": 7.304,
+        "std": 2.246682888170914
+      }
+    }
+  },
+  "model_rankings": {
+    "by_f1": [
+      [
+        "Transformer",
+        0.9668143641016707
+      ],
+      [
+        "YAKE",
+        0.6543769798828623
+      ],
+      [
+        "TF-IDF",
+        0.25667767787767787
+      ],
+      [
+        "KeyBERT",
+        0.10520990675990675
+      ],
+      [
+        "RAKE",
+        0.0
+      ]
+    ],
+    "balanced": [
+      [
+        "Transformer",
+        0.7352022108780794
+      ],
+      [
+        "YAKE",
+        0.5345146748741813
+      ],
+      [
+        "TF-IDF",
+        0.31783453621900365
+      ],
+      [
+        "KeyBERT",
+        0.2776441504319099
+      ],
+      [
+        "RAKE",
+        0.0
+      ]
+    ]
+  },
+  "recommendations": [
+    "Best F1 Score: Transformer (F1: 0.967)",
+    "Best Balanced Performance: Transformer (Score: 0.735)",
+    "Most Relevant Keywords: KeyBERT",
+    "Most Diverse Keywords: KeyBERT"
+  ]
+}
